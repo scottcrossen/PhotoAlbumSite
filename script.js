@@ -8,8 +8,8 @@ $(document).ready(function() {
   var message_data = {}
   const picture_ref = firebase.database().ref('pictures')
   const message_ref = firebase.database().ref('chat')
-  const get_norm_picture_index = (picture_index) => (picture_index.mod(Object.keys(_.omit(image_data, 'background')).length)).toString()
-  const get_norm_message_index = (message_index) => (message_index.mod(Object.keys(message_data['messages']).length)).toString()
+  const get_norm_picture_index = (picture_index) => Object.keys(_.omit(image_data, 'background'))[picture_index.mod(Object.keys(_.omit(image_data, 'background')).length)]
+  const get_norm_message_index = (message_index) => Object.keys(message_data['messages'])[message_index.mod(Object.keys(message_data['messages']).length)]
   const set_background = () => {
     if (image_data && image_data['background']) {
       const background_url = image_data['background']
