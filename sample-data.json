@@ -1,0 +1,45 @@
+{
+  "pictures" : {
+    "0" : {
+      "info" : "This picture was taken in the summer of 2017 during a visit my friend and I made to San Francisco.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/san_francisco/san_francisco_bridge_far_4.jpg"
+    },
+    "1" : {
+      "info" : "The top of Half Dome in Yosemite features long cables to assist climbers up the face of the summit.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/yosemite/half_dome_top_1.jpg"
+    },
+    "2" : {
+      "info" : "I interviewed at Google for a job around February/March 2018. While there I took this picture!",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/bay_area/google_campus_1.jpg"
+    },
+    "3" : {
+      "info" : "This picture is of my long-time friend and I snowmachining.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/coyote_gulch/coyote_gulch_waterfall_2.jpeg"
+    },
+    "4" : {
+      "info" : "This picture is of my long-time friend and I snowmachining.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/start_of_winter_2018/snowmachine_1.jpeg"
+    },
+    "5" : {
+      "info" : "During my time at BYU I had the opportunity to give many presentations on my research. This is one of those presentations taken at Colorado State University. The display screen is broken in this photo.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/colorado/conference_4c_co_2.jpg"
+    },
+    "6" : {
+      "info" : "Growing up in Spokane Washington has engendered a skill for trap shooting in me.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/campus_adventures/trap_shooting.jpg"
+    },
+    "7" : {
+      "info" : "Ain't nothing like travelling through Albuquerque and finding a pink cowboy hat in a random gas station!",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/new_mexico/albuquerque_hat_1.jpg"
+    },
+    "8" : {
+      "info" : "My brother and I are twins believe it or not. We used to have a truck too.",
+      "location" : "http://www.scottcrossen.com/assets/images/posts/winter_semester_2017/sunglasses_2.jpg"
+    },
+    "9" : {
+      "info" : "This picture is a random selfie taken during my time at BYU.",
+      "location" : "assets/scott_jacket.jpg"
+    },
+    "background" : "assets/background.jpg"
+  }
+}

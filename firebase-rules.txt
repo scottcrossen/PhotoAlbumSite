@@ -1,0 +1,54 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "chat": {
+      "head": {
+        ".validate": "newData.isNumber() && newData.val() % 1 === 0.0 && newData.val() >= 0 && newData.val() < 30"
+      },
+      "messages": {
+        "$message": {
+          ".validate": "$message.matches(/^[0-9]|[1-2][0-9]$/)",
+          "message": {
+            ".validate": "newData.isString() && newData.val().length < 512 && newData.val().length > 0"
+          },
+          "user": {
+            ".validate": "newData.isString() && newData.val().length < 24 && newData.val().length > 0"
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      },
+      "$other": {
+        ".validate": false
+      }
+    },
+    "pictures": {
+      "background": {
+        ".validate": false // Only allow admin background picture listings
+      },
+      "$picture": {
+        ".validate": "data.val() != null", // Only allow admin picture listings
+        "up": {
+          ".validate": "newData.isNumber() && newData.val() % 1 === 0.0 && newData.val() >= 0 && ((data.val() == null && newData.val() == 1) || (data.val() != null && newData.val() == data.val() + 1))"
+        },
+        "info": {
+          ".validate": false // Only allow admin data injections
+        },
+        "location": {
+          ".validate": false
+        },
+        "down": {
+          ".validate": "newData.isNumber() && newData.val() % 1 === 0.0 && newData.val() >= 0 && ((data.val() == null && newData.val() == 1) || (data.val() != null && newData.val() == data.val() + 1))"
+        },
+        "$other": {
+          ".validate": false // Only allow admin data injections
+        }
+      }
+    },
+    "$other": {
+      ".validate": false
+    }
+  }
+}
