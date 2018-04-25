@@ -21,7 +21,11 @@ $(document).ready(function() {
     if (image_data) {
       if (picture_index != null) {
         picture = image_data[get_norm_picture_index(picture_index)]
-        $('.image-container').append(`<img src=\"${picture['location']}\">`)
+        $('.image-container').append(
+`<a href=\"${picture['location']}\">
+  <img src=\"${picture['location']}\">
+</a>`
+        )
         $('#vote-up p').text(picture['up'] || 0)
         $('#vote-down p').text(picture['down'] || 0)
         $('.info-modal .content').text(picture['info'] || 'No info on this image')
@@ -35,14 +39,15 @@ $(document).ready(function() {
     if (message_data) {
       message = message_data['messages'][get_norm_message_index(message_index)]
       $('.chat-modal .content').append(
-  `<div class=\"message\">
-    <div class=\"message-sender\">
-      ${message['user']}
-    </div>
-    <div class=\"message-text\">
-      ${message['message']}
-    </div>
-  </div>`)
+`<div class=\"message\">
+  <div class=\"message-sender\">
+    ${message['user']}
+  </div>
+  <div class=\"message-text\">
+    ${message['message']}
+  </div>
+</div>`
+      )
     }
   }
   const add_all_messages = () => {
